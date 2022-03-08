@@ -12,6 +12,6 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'docker://docker.io/nusak/github-action-fpm'
+  image: 'docker://docker.io/gravitl/github-action-fpm'
   args:
     - ${{ inputs.fpm_args }}
