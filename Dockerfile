@@ -10,6 +10,9 @@ RUN apk --no-cache add build-base
 RUN apk --no-cache add rpm
 RUN apk --no-cache add tar
 RUN apk --no-cache add zip
+# for pacman
+RUN apk --no-cache add libarchive-tools
+RUN apk --no-cache add zstd
 RUN gem install --no-document fpm -v 1.14.1
 
 COPY entrypoint.sh /entrypoint.sh
